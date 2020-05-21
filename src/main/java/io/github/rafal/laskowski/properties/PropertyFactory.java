@@ -3,7 +3,7 @@ package io.github.rafal.laskowski.properties;
 import java.util.Optional;
 import java.util.function.Supplier;
 
-public class PropertyFactory {
+class PropertyFactory {
     private static final String EXCEPTION_MESSAGE = "Property [%s] is null. Use `getNullable[Type](String propertyName)` to retrieve properties with nulls";
 
     public static <T> Optional<T> getNullable(Property<T> property) {

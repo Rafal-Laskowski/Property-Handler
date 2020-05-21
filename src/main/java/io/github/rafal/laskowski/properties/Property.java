@@ -2,7 +2,7 @@ package io.github.rafal.laskowski.properties;
 
 import java.util.Optional;
 
-public class Property<T> {
+class Property<T> {
     private String value;
 
     public Property(String value) {

@@ -9,6 +9,10 @@ import java.util.Optional;
 public class Properties {
     private static volatile java.util.Properties properties = new java.util.Properties();
 
+    public static synchronized java.util.Properties getProperties() {
+        return properties;
+    }
+
     public static synchronized void loadFile(File file) throws IOException {
         Objects.requireNonNull(file);
         if (file.exists() && file.isFile()) {
